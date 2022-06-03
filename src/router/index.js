@@ -20,7 +20,7 @@ const routes = [
   { path: '/', redirect: '/lhl' },
   { path: '/lhl', component: () => import('../views/lhl-ing.vue') },
   { path: '/cpp', component: () => import('../views/cpp-ing.vue') },
-  { path: '/xh', component: () => import('../views/xh-ing.vue') },
+  // { path: '/xh', component: () => import('../views/xh-ing.vue') },
   { path: '/yj', component: () => import('../views/yj-ing.vue') }
 ]
 

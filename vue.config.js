@@ -3,6 +3,9 @@
 //   transpileDependencies: true,
 // })
 module.exports = {
+  // defineConfig: {
+  //   transpileDependencies: true
+  // },
   devServer: {
     proxy: {
       // 老黄历
@@ -11,7 +14,7 @@ module.exports = {
         changeOrigin: true,
         ws: true,
         pathRewrite: {
-          "^api0": ""
+          '^/api0': ''
         }
       },
       // 油价
@@ -20,25 +23,25 @@ module.exports = {
         changeOrigin: true,
         ws: true,
         pathRewrite: {
-          "^api1": ""
+          '^/api1': ''
         }
       },
-      //车
-      '/api0': {
+      // 车
+      '/pp': {
         target: 'http://apis.juhe.cn/cxdq/brand',
         changeOrigin: true,
         ws: true,
         pathRewrite: {
-          "^/pp": ""
+          '^/pp': ''
         }
       },
-      //笑话
-      '/api0': {
+      // 笑话
+      '/api2': {
         target: 'https://api.gugudata.com/news/joke',
         changeOrigin: true,
         ws: true,
         pathRewrite: {
-          "^api2": ""
+          '^/api2': ''
         }
       }
     }

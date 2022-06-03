@@ -6,7 +6,7 @@ import 'lib-flexible/flexible'
 import axios from 'axios'
 
 // //使用vant组件日历组件，layout布局组件,tag标记组件
-import { Calendar, Col, Row, Tag } from 'vant'
+import { Calendar, Col, Row, Tag, DropdownItem, DropdownMenu, Grid, GridItem, Cell, Image as VanImage, Pagination, Tabbar, TabbarItem } from 'vant'
 
 Vue.prototype.axios = axios
 
@@ -16,6 +16,15 @@ Vue.use(Calendar)
 Vue.use(Col)
 Vue.use(Row)
 Vue.use(Tag)
+Vue.use(DropdownMenu)
+Vue.use(DropdownItem)
+Vue.use(GridItem)
+Vue.use(Grid)
+Vue.use(VanImage)
+Vue.use(Cell)
+Vue.use(Pagination)
+Vue.use(Tabbar)
+Vue.use(TabbarItem)
 
 new Vue({
   router,
